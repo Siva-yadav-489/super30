@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 14rem;
+  font-size: 1rem;
+  background-color: antiquewhite;
+  z-index: 1;
+}
+.navbar a {
+  color: rgb(73, 73, 73);
+  font-weight: 500;
+}
+.left-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+}
+.right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+}
+
+.left-nav input {
+  border: 2px solid rgba(188, 178, 178, 0.803);
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: 40%;
+  background: none;
+}
+.right-nav button {
+  border: none;
+  padding: 0.5rem 1.5rem;
+  background-color: coral;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.main {
+  margin-top: 5rem;
+  padding: 1rem 14rem;
+  position: relative;
+}
+.mainpara-1,
+.aboutpara,
+.lastpara {
+  padding: 1rem 1rem;
+  background-color: rgba(5, 5, 5, 0.155);
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.mainimg {
+  width: 100%;
+  margin: 2rem 0;
+  border-radius: 10px;
+  border: 1px solid rgba(47, 47, 45, 0.137);
+}
+.mainpara-1 p,
+.aboutpara p,
+.lastpara p {
+  padding: 0.5rem 0;
+}
+.contactnow {
+  margin: 0rem 0 2rem 0;
+  padding: 1rem 0;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: rgba(255, 127, 80);
+  border-radius: 10px;
+  position: sticky;
+  top: 5.5rem;
+}
+.lastpara img {
+  height: 25rem;
+  margin: 2rem 1rem;
+  border-radius: 10px;
+}
+.chatbox {
+  position: absolute;
+  right: 0px;
+  position: fixed;
+  bottom: 2rem;
+  padding: 1rem;
+  border: 2px solid rgba(68, 68, 68, 0.569);
+  border-radius: 10px;
+  width: 10rem;
+  background-color: antiquewhite;
+}
+.chatbox input {
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border: none;
+  width: 80%;
+  border-radius: 10px;
+}
+.footer {
+  padding: 2rem 14rem;
+  background-color: rgba(250, 235, 215, 0.649);
+}
+.footer p {
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.55);
+}
+.footer h4 {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.75);
+}
+.socials img {
+  width: 2rem;
+  padding: 1rem 1rem 1rem 0;
+}
