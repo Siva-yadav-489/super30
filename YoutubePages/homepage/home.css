@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #0f0f0f;
+}
+.input-group {
+  width: 35rem;
+}
+.form-control,
+.input-group-text {
+  border-color: hsl(0, 0%, 18.82%);
+  background-color: hsl(0, 0%, 7%);
+  box-shadow: none;
+  color: #fff;
+  border-radius: 30px;
+}
+.input-group-text {
+  border: 1px solid hsl(0, 0%, 18.82%);
+  background-color: hsla(0, 0%, 100%, 0.08);
+}
+.fa-microphone {
+  background-color: hsla(0, 0%, 100%, 0.08);
+  border-radius: 50px;
+  height: 42px;
+  width: 42px;
+  line-height: 1.6rem;
+}
+.create-button {
+  border: none;
+  background-color: hsla(0, 0%, 100%, 0.08);
+  border-radius: 30px;
+  color: #fff;
+}
+.vertical-nav {
+  width: 15rem;
+}
+.vnav-text {
+  font-size: 0.92rem;
+}
+.vnav-text:hover {
+  background-color: #ffffff1f;
+  border-radius: 50px;
+}
+.container {
+  max-width: 1450px;
+}
+
+@media (max-width: 500px) {
+  .vertical-nav,
+  .fa-bars,
+  .center-nav,
+  .create-button,
+  .fa-bell {
+    display: none !important;
+  }
+}
+.menu {
+  border-radius: 10px;
+  font-size: 0.8rem;
+  text-wrap: nowrap;
+}
+.menu:hover {
+  background-color: #ffffff38;
+}
+
+.time {
+  position: absolute;
+  bottom: 89px;
+  right: 10px;
+  border-radius: 2px;
+  font-size: 0.8rem;
+}
+.card-title {
+  font-size: 1.15rem !important;
+}
+.channel-name {
+  font-size: 0.95rem;
+}
+.view-count {
+  font-size: 0.8rem !important;
+}
+.card-body img {
+  border-radius: 50%;
+}
