@@ -46,7 +46,8 @@
   height: 50px;
 }
 main {
-  padding: 0 5rem 0 5rem;
+  padding: 0 3rem 0 3rem;
+  margin-top: 60px;
 }
 .channel-name h3 {
   font-size: 0.5rem;

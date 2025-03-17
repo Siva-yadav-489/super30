@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #0f0f0f;
+}
+.input-group {
+  width: 35rem;
+}
+.form-control,
+.input-group-text {
+  border-color: hsl(0, 0%, 18.82%);
+  background-color: hsl(0, 0%, 7%);
+  box-shadow: none;
+  color: #fff;
+  border-radius: 30px;
+}
+.input-group-text {
+  border: 1px solid hsl(0, 0%, 18.82%);
+  background-color: hsla(0, 0%, 100%, 0.08);
+}
+.fa-microphone {
+  background-color: hsla(0, 0%, 100%, 0.08);
+  border-radius: 50px;
+  height: 42px;
+  width: 42px;
+  line-height: 1.6rem;
+}
+.create-button {
+  border: none;
+  background-color: hsla(0, 0%, 100%, 0.08);
+  border-radius: 30px;
+  color: #fff;
+}
+.vertical-nav {
+  width: 14rem;
+  margin-top: 55px;
+}
+.vnav-text {
+  font-size: 0.92rem;
+  border-radius: 10px;
+}
+.vnav-text:hover {
+  background-color: #ffffff1f;
+}
+.container {
+  max-width: 1450px;
+}
+.main-content {
+  margin-left: 240px !important;
+}
+@media (max-width: 500px) {
+  .vertical-nav,
+  .fa-bars,
+  .center-nav,
+  .create-button,
+  .fa-bell {
+    display: none !important;
+  }
+}
+.music-logo {
+  min-width: 1px;
+  min-height: 1px;
+  max-width: 95px;
+  border-radius: 50%;
+}
+.subscribe {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  font-size: 0.9rem;
+  width: fit-content;
+}
+.music-header {
+  background-color: #ffffff1f;
+}
+.card-title {
+  font-size: 1.15rem !important;
+}
+.video-desc {
+  font-size: 0.9rem;
+}
+.pl-image {
+  max-width: 250px;
+}
