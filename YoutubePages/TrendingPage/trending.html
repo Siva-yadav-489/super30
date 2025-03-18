@@ -19,12 +19,15 @@
     />
     <link rel="stylesheet" href="trending.css" />
   </head>
-  <body>
+  <body class="scroll-bar">
     <nav
       class="nav d-flex align-items-center justify-content-between py-2 fixed-top"
     >
       <div class="left-nav d-flex align-items-center">
-        <i class="fa-solid fa-bars fa-lg px-4" style="color: #ffffff"></i>
+        <i
+          class="fa-solid fa-bars fa-lg px-4 bg-transparent"
+          style="color: #ffffff"
+        ></i>
         <a href="../homepage/home.html">
           <span
             class="text-light px-2 yt-icon-shape style-scope yt-icon yt-spec-icon-shape"
@@ -90,7 +93,7 @@
         <div class="input-group">
           <input
             type="text"
-            class="form-control lh-base"
+            class="form-control lh-base search-bar"
             placeholder="Search"
             aria-label="Search"
             aria-describedby="basic-addon1"
@@ -109,7 +112,10 @@
       </div>
       <div class="right-nav d-flex align-items-center">
         <button class="create-button p-2 px-4">
-          <i class="fa-solid fa-plus fa-lg px-2" style="color: #ffffff"></i
+          <i
+            class="fa-solid fa-plus fa-lg px-2 bg-transparent"
+            style="color: #ffffff"
+          ></i
           >Create
         </button>
         <i class="fa-regular fa-bell fa-xl px-4" style="color: #ffffff"></i>
@@ -120,11 +126,11 @@
       </div>
     </nav>
     <main class="d-flex">
-      <div class="vertical-nav fixed-top">
+      <div class="vertical-nav fixed-top overflow-y-scroll scroll-bar py-2">
         <div class="row">
           <a
             href="../homepage/home.html"
-            class="text-decoration-none text-light px-4 py-2 fw-medium vnav-text"
+            class="text-decoration-none text-light vnav-button rounded px-4 py-2 fw-medium vnav-text"
             ><i
               class="fa-solid fa-house fa-lg px-3 bg-transparent"
               style="color: #ffffff"
@@ -325,6 +331,56 @@
           >
         </div>
       </div>
+      <div class="vertical-nav-md fixed-top">
+        <div class="row vnav-text mx-2">
+          <a
+            href="../homepage/home.html"
+            class="text-decoration-none text-ligh vnav-button rounded py-2 fw-medium bg-transparent"
+            ><i
+              class="fa-solid fa-house fa-lg px-3 bg-transparent"
+              style="color: #ffffff"
+            ></i
+          ></a>
+          <p class="text-light px-4 fw-semibold rounded bg-transparent">Home</p>
+        </div>
+        <div class="row vnav-text mx-2">
+          <a
+            href="#"
+            class="text-decoration-none text-light py-2 fw-medium vnav-text bg-transparent"
+            ><i
+              class="fa-solid fa-video fa-lg px-3 bg-transparent"
+              style="color: #ffffff"
+            ></i
+          ></a>
+          <p class="text-light px-4 fw-semibold rounded bg-transparent">
+            Shorts
+          </p>
+        </div>
+        <div class="row vnav-text mx-2">
+          <a
+            href="#"
+            class="text-decoration-none text-light py-2 fw-medium vnav-text bg-transparent"
+            ><i
+              class="fa-solid fa-film fa-lg px-3 bg-transparent"
+              style="color: #ffffff"
+            ></i
+          ></a>
+          <p class="text-light fw-semibold rounded bg-transparent">
+            Subscriptions
+          </p>
+        </div>
+        <div class="row vnav-text mx-2">
+          <a
+            href="#"
+            class="text-decoration-none text-light py-2 fw-medium vnav-text bg-transparent"
+            ><i
+              class="fa-solid fa-user fa-lg px-3 bg-transparent"
+              style="color: #ffffff"
+            ></i
+          ></a>
+          <p class="text-light px-4 fw-semibold rounded bg-transparent">You</p>
+        </div>
+      </div>
       <div class="container trending-container">
         <div class="row align-items-center">
           <img
@@ -343,8 +399,8 @@
           </p>
           <hr class="text-light" />
         </div>
-        <div class="row position-relative my-2">
-          <a href="#" class="col-3"
+        <div class="my-2 d-flex vid-slide">
+          <a href="#" class="position-relative"
             ><img
               src="images/thumnails/t1.webp"
               alt="image"
@@ -357,7 +413,7 @@
               18:42
             </p></a
           >
-          <div class="card-body text-light col-6">
+          <div class="card-body text-light col-md-6 px-2">
             <p class="card-title fs-5">
               Ruchika and I became Parents for 24 Hours
             </p>
@@ -372,13 +428,9 @@
               https://www.youtube.co...
             </p>
           </div>
-          <i
-            class="fa-solid fa-ellipsis-vertical align-self-start py-1 col-3"
-            style="color: #ffffff"
-          ></i>
         </div>
-        <div class="row position-relative my-2">
-          <a href="#" class="col-3"
+        <div class="my-2 d-flex vid-slide">
+          <a href="#" class="position-relative"
             ><img
               src="images/thumnails/t2.webp"
               alt="image"
@@ -391,7 +443,7 @@
               9:40
             </p></a
           >
-          <div class="card-body text-light col-6">
+          <div class="card-body text-light col-md-6 px-2">
             <p class="card-title fs-5">
               1st T20I | Highlights | Pakistan Tour Of New Zealand | 16th March
               2025
@@ -407,15 +459,10 @@
               chased...
             </p>
           </div>
-
-          <i
-            class="fa-solid fa-ellipsis-vertical align-self-start py-1 col-3"
-            style="color: #ffffff"
-          ></i>
         </div>
         <!-- reels -->
         <div class="row gx-3 my-3">
-          <div class="col-lg-2 col-md-4">
+          <div class="col-lg-2 col-md-4 col-sm-6">
             <img
               src="images/reels/r1.png"
               alt="image"
@@ -429,7 +476,7 @@
               <p class="view-count fs-6 text-secondary mb-0">17K views</p>
             </div>
           </div>
-          <div class="col-lg-2 col-md-4">
+          <div class="col-lg-2 col-md-4 col-sm-6">
             <img
               src="images/reels/r2.png"
               alt="image"
@@ -443,7 +490,7 @@
               <p class="view-count fs-6 text-secondary mb-0">5M views</p>
             </div>
           </div>
-          <div class="col-lg-2 col-md-4">
+          <div class="col-lg-2 col-md-4 col-sm-6">
             <img
               src="images/reels/r3.png"
               alt="image"
@@ -457,7 +504,7 @@
               <p class="view-count fs-6 text-secondary mb-0">1.7M views</p>
             </div>
           </div>
-          <div class="col-lg-2 col-md-4">
+          <div class="col-lg-2 col-md-4 col-sm-6">
             <img
               src="images/reels/r4.png"
               alt="image"
@@ -469,7 +516,7 @@
               <p class="view-count fs-6 text-secondary mb-0">208K views</p>
             </div>
           </div>
-          <div class="col-lg-2 col-md-4">
+          <div class="col-lg-2 col-md-4 col-sm-6">
             <img
               src="images/reels/r5.png"
               alt="image"
@@ -481,7 +528,7 @@
               <p class="view-count fs-6 text-secondary mb-0">2M views</p>
             </div>
           </div>
-          <div class="col-lg-2 col-md-4">
+          <div class="col-lg-2 col-md-4 col-sm-6">
             <img
               src="images/reels/r6.png"
               alt="image"
@@ -497,8 +544,8 @@
           </div>
         </div>
 
-        <div class="row position-relative my-2">
-          <a href="#" class="col-3"
+        <div class="my-2 d-flex vid-slide">
+          <a href="#" class="position-relative"
             ><img
               src="images/thumnails/t3.webp"
               alt="image"
@@ -511,7 +558,7 @@
               3:47
             </p></a
           >
-          <div class="card-body text-light col-6">
+          <div class="card-body text-light col-md-6 px-2">
             <p class="card-title fs-5">
               Holi 2025: Sambhal में होली के बाद जुम्मे की नमाज कराने के लिए
               मस्जिद के बहार खुद तैनात हैं CO अनुज
@@ -525,13 +572,9 @@
               मस्जिद के बहार खुद तैनात...
             </p>
           </div>
-          <i
-            class="fa-solid fa-ellipsis-vertical align-self-start py-1 col-3"
-            style="color: #ffffff"
-          ></i>
         </div>
-        <div class="row position-relative my-2">
-          <a href="#" class="col-3"
+        <div class="my-2 d-flex vid-slide">
+          <a href="#" class="position-relative"
             ><img
               src="images/thumnails/t4.webp"
               alt="image"
@@ -544,7 +587,7 @@
               14:31
             </p></a
           >
-          <div class="card-body text-light col-6">
+          <div class="card-body text-light col-md-6 px-2">
             <p class="card-title fs-5">
               Happy Holi | the mridul | Pragati | Nitin
             </p>
@@ -558,14 +601,9 @@
               https://www.instagram.com/themridul_...
             </p>
           </div>
-
-          <i
-            class="fa-solid fa-ellipsis-vertical align-self-start py-1 col-3"
-            style="color: #ffffff"
-          ></i>
         </div>
-        <div class="row position-relative my-2">
-          <a href="#" class="col-3"
+        <div class="my-2 d-flex vid-slide">
+          <a href="#" class="position-relative"
             ><img
               src="images/thumnails/t5.webp"
               alt="image"
@@ -578,7 +616,7 @@
               21:34
             </p></a
           >
-          <div class="card-body text-light col-6">
+          <div class="card-body text-light col-md-6 px-2">
             <p class="card-title fs-5">
               India VS Australia | Full Highlights | International Masters
               League | Colors Cineplex
@@ -592,14 +630,9 @@
               win! 🔥💪 Boundaries galore! Watch the epic run fest...
             </p>
           </div>
-
-          <i
-            class="fa-solid fa-ellipsis-vertical align-self-start py-1 col-3"
-            style="color: #ffffff"
-          ></i>
         </div>
-        <div class="row position-relative my-2">
-          <a href="#" class="col-3"
+        <div class="my-2 d-flex vid-slide">
+          <a href="#" class="position-relative"
             ><img
               src="images/thumnails/t1.webp"
               alt="image"
@@ -612,7 +645,7 @@
               18:42
             </p></a
           >
-          <div class="card-body text-light col-6">
+          <div class="card-body text-light col-md-6 px-2">
             <p class="card-title fs-5">
               Ruchika and I became Parents for 24 Hours
             </p>
@@ -627,13 +660,9 @@
               https://www.youtube.co...
             </p>
           </div>
-          <i
-            class="fa-solid fa-ellipsis-vertical align-self-start py-1 col-3"
-            style="color: #ffffff"
-          ></i>
         </div>
-        <div class="row position-relative my-2">
-          <a href="#" class="col-3"
+        <div class="my-2 d-flex vid-slide">
+          <a href="#" class="position-relative"
             ><img
               src="images/thumnails/t2.webp"
               alt="image"
@@ -646,7 +675,7 @@
               9:40
             </p></a
           >
-          <div class="card-body text-light col-6">
+          <div class="card-body text-light col-md-6 px-2">
             <p class="card-title fs-5">
               1st T20I | Highlights | Pakistan Tour Of New Zealand | 16th March
               2025
@@ -662,14 +691,9 @@
               chased...
             </p>
           </div>
-
-          <i
-            class="fa-solid fa-ellipsis-vertical align-self-start py-1 col-3"
-            style="color: #ffffff"
-          ></i>
         </div>
-        <div class="row position-relative my-2">
-          <a href="#" class="col-3"
+        <div class="my-2 d-flex vid-slide">
+          <a href="#" class="position-relative"
             ><img
               src="images/thumnails/t3.webp"
               alt="image"
@@ -682,7 +706,7 @@
               3:47
             </p></a
           >
-          <div class="card-body text-light col-6">
+          <div class="card-body text-light col-md-6 px-2">
             <p class="card-title fs-5">
               Holi 2025: Sambhal में होली के बाद जुम्मे की नमाज कराने के लिए
               मस्जिद के बहार खुद तैनात हैं CO अनुज
@@ -696,13 +720,9 @@
               मस्जिद के बहार खुद तैनात...
             </p>
           </div>
-          <i
-            class="fa-solid fa-ellipsis-vertical align-self-start py-1 col-3"
-            style="color: #ffffff"
-          ></i>
         </div>
-        <div class="row position-relative my-2">
-          <a href="#" class="col-3"
+        <div class="my-2 d-flex vid-slide">
+          <a href="#" class="position-relative"
             ><img
               src="images/thumnails/t4.webp"
               alt="image"
@@ -715,7 +735,7 @@
               14:31
             </p></a
           >
-          <div class="card-body text-light col-6">
+          <div class="card-body text-light col-md-6 px-2">
             <p class="card-title fs-5">
               Happy Holi | the mridul | Pragati | Nitin
             </p>
@@ -729,14 +749,9 @@
               https://www.instagram.com/themridul_...
             </p>
           </div>
-
-          <i
-            class="fa-solid fa-ellipsis-vertical align-self-start py-1 col-3"
-            style="color: #ffffff"
-          ></i>
         </div>
-        <div class="row position-relative my-2">
-          <a href="#" class="col-3"
+        <div class="my-2 d-flex vid-slide">
+          <a href="#" class="position-relative"
             ><img
               src="images/thumnails/t5.webp"
               alt="image"
@@ -749,7 +764,7 @@
               21:34
             </p></a
           >
-          <div class="card-body text-light col-6">
+          <div class="card-body text-light col-md-6 px-2">
             <p class="card-title fs-5">
               India VS Australia | Full Highlights | International Masters
               League | Colors Cineplex
@@ -763,11 +778,62 @@
               win! 🔥💪 Boundaries galore! Watch the epic run fest...
             </p>
           </div>
-
-          <i
-            class="fa-solid fa-ellipsis-vertical align-self-start py-1 col-3"
-            style="color: #ffffff"
-          ></i>
+        </div>
+      </div>
+      <div
+        class="horizontal-nav-sm fixed-bottom justify-content-evenly align-items-center d-flex"
+      >
+        <div class="vnav-text m-2">
+          <a
+            href="../homepage/home.html"
+            class="text-decoration-none text-ligh vnav-button rounded py-2 fw-medium bg-transparent"
+            ><i
+              class="fa-solid fa-house fa-lg px-3 bg-transparent"
+              style="color: #ffffff"
+            ></i>
+            <p class="text-light px-2 fw-semibold rounded bg-transparent">
+              Home
+            </p></a
+          >
+        </div>
+        <div class="vnav-text m-2">
+          <a
+            href="#"
+            class="text-decoration-none text-light py-2 fw-medium vnav-text bg-transparent"
+            ><i
+              class="fa-solid fa-video fa-lg px-3 bg-transparent"
+              style="color: #ffffff"
+            ></i>
+            <p class="text-light px-2 fw-semibold rounded bg-transparent">
+              Shorts
+            </p></a
+          >
+        </div>
+        <div class="vnav-text m-2">
+          <a
+            href="#"
+            class="text-decoration-none text-light py-2 fw-medium vnav-text bg-transparent"
+            ><i
+              class="fa-solid fa-film fa-lg px-3 bg-transparent"
+              style="color: #ffffff"
+            ></i>
+            <p class="text-light fw-semibold rounded bg-transparent">
+              Subscriptions
+            </p></a
+          >
+        </div>
+        <div class="vnav-text m-2">
+          <a
+            href="#"
+            class="text-decoration-none text-light py-2 fw-medium vnav-text bg-transparent"
+            ><i
+              class="fa-solid fa-user fa-lg px-3 bg-transparent"
+              style="color: #ffffff"
+            ></i>
+            <p class="text-light px-2 fw-semibold rounded bg-transparent">
+              You
+            </p></a
+          >
         </div>
       </div>
     </main>

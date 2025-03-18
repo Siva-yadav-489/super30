@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="home.css" />
   </head>
-  <body>
+  <body class="scroll-bar">
     <nav
       class="nav d-flex align-items-center justify-content-between py-2 fixed-top"
     >
@@ -93,14 +93,14 @@
         <div class="input-group">
           <input
             type="text"
-            class="form-control lh-base"
+            class="form-control lh-base search-bar"
             placeholder="Search"
             aria-label="Search"
             aria-describedby="basic-addon1"
           />
           <span class="input-group-text" id="basic-addon1"
             ><i
-              class="fa-solid fa-magnifying-glass fa-lg px-2"
+              class="fa-solid fa-magnifying-glass fa-lg px-2 bg-transparent"
               style="color: #ffffff"
             ></i
           ></span>
@@ -120,17 +120,17 @@
         </button>
         <i class="fa-regular fa-bell fa-xl px-4" style="color: #ffffff"></i>
         <i
-          class="fa-solid fa-circle-user fa-2xl px-4"
+          class="fa-solid fa-circle-user fa-xl px-4"
           style="color: #ffffff"
         ></i>
       </div>
     </nav>
     <main class="d-flex">
-      <div class="vertical-nav fixed-top py-2">
+      <div class="vertical-nav fixed-top overflow-y-scroll scroll-bar py-2">
         <div class="row">
           <a
             href="../homepage/home.html"
-            class="text-decoration-none text-ligh create-button rounded px-4 py-2 fw-medium vnav-text"
+            class="text-decoration-none text-light vnav-button rounded px-4 py-2 fw-medium vnav-text"
             ><i
               class="fa-solid fa-house fa-lg px-3 bg-transparent"
               style="color: #ffffff"
@@ -331,46 +331,105 @@
           >
         </div>
       </div>
-      <div class="container mx-0 main-content">
-        <div class="row px-2">
+      <div class="vertical-nav-md fixed-top">
+        <div class="row vnav-text mx-2">
+          <a
+            href="../homepage/home.html"
+            class="text-decoration-none text-ligh vnav-button rounded py-2 fw-medium bg-transparent"
+            ><i
+              class="fa-solid fa-house fa-lg px-3 bg-transparent"
+              style="color: #ffffff"
+            ></i
+          ></a>
+          <p class="text-light px-4 fw-semibold rounded bg-transparent">Home</p>
+        </div>
+        <div class="row vnav-text mx-2">
+          <a
+            href="#"
+            class="text-decoration-none text-light py-2 fw-medium vnav-text bg-transparent"
+            ><i
+              class="fa-solid fa-video fa-lg px-3 bg-transparent"
+              style="color: #ffffff"
+            ></i
+          ></a>
+          <p class="text-light px-4 fw-semibold rounded bg-transparent">
+            Shorts
+          </p>
+        </div>
+        <div class="row vnav-text mx-2">
+          <a
+            href="#"
+            class="text-decoration-none text-light py-2 fw-medium vnav-text bg-transparent"
+            ><i
+              class="fa-solid fa-film fa-lg px-3 bg-transparent"
+              style="color: #ffffff"
+            ></i
+          ></a>
+          <p class="text-light fw-semibold rounded bg-transparent">
+            Subscriptions
+          </p>
+        </div>
+        <div class="row vnav-text mx-2">
+          <a
+            href="#"
+            class="text-decoration-none text-light py-2 fw-medium vnav-text bg-transparent"
+            ><i
+              class="fa-solid fa-user fa-lg px-3 bg-transparent"
+              style="color: #ffffff"
+            ></i
+          ></a>
+          <p class="text-light px-4 fw-semibold rounded bg-transparent">You</p>
+        </div>
+      </div>
+      <div class="container mx-0 px-2 main-content">
+        <div class="row fixed-top overflow-y-scroll scroll-bar filter-nav pt-2">
           <button
-            class="create-button text-dark bg-light menu fw-medium mx-1 mb-3 col py-2"
+            class="vnav-button text-dark bg-light menu fw-medium mx-1 mb-3 col py-2"
           >
             All
           </button>
-          <button class="create-button menu fw-medium mx-1 mb-3 col py-2">
+          <button class="vnav-button menu fw-medium mx-1 mb-3 col py-2">
             Test drives
           </button>
-          <button class="create-button menu fw-medium mx-1 mb-3 col py-2">
+          <button class="vnav-button menu fw-medium mx-1 mb-3 col py-2">
             formula 1
           </button>
-          <button class="create-button menu fw-medium mx-1 mb-3 col py-2">
+          <button class="vnav-button menu fw-medium mx-1 mb-3 col py-2">
             Laptops
           </button>
-          <button class="create-button menu fw-medium mx-1 mb-3 col py-2">
+          <button class="vnav-button menu fw-medium mx-1 mb-3 col py-2">
             Excercise Machines
           </button>
-          <button class="create-button menu fw-medium mx-1 mb-3 col py-2">
+          <button class="vnav-button menu fw-medium mx-1 mb-3 col py-2">
             Gaming
           </button>
-          <button class="create-button menu fw-medium mx-1 mb-3 col py-2">
+          <button class="vnav-button menu fw-medium mx-1 mb-3 col py-2">
             Engines
           </button>
-          <button class="create-button menu fw-medium mx-1 mb-3 col py-2">
+          <button class="vnav-button menu fw-medium mx-1 mb-3 col py-2">
             Podcasts
           </button>
-          <button class="create-button menu fw-medium mx-1 mb-3 col py-2">
+          <button class="vnav-button menu fw-medium mx-1 mb-3 col py-2">
             Music
           </button>
-          <button class="create-button menu fw-medium mx-1 mb-3 col py-2">
+          <button class="vnav-button menu fw-medium mx-1 mb-3 col py-2">
             Mixes
           </button>
-          <button class="create-button menu fw-medium mx-1 mb-3 col py-2">
+          <button class="vnav-button menu fw-medium mx-1 mb-3 col py-2">
+            Motovlogs
+          </button>
+          <button class="vnav-button menu fw-medium mx-1 mb-3 col py-2">
+            Music
+          </button>
+          <button class="vnav-button menu fw-medium mx-1 mb-3 col py-2">
+            Mixes
+          </button>
+          <button class="vnav-button menu fw-medium mx-1 mb-3 col py-2">
             Motovlogs
           </button>
         </div>
         <div class="row gx-3 my-3">
-          <div class="col-lg-3 thumbnail position-relative col-md-6">
+          <div class="col-lg-3 thumbnail position-relative col-sm-6">
             <a href="../WatchPage/watch.html"
               ><img
                 src="images/ad.png"
@@ -395,7 +454,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 thumbnail position-relative col-md-6">
+          <div class="col-lg-3 thumbnail position-relative col-sm-6">
             <a href="../WatchPage/watch.html"
               ><img
                 src="images/img1.png"
@@ -422,7 +481,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 thumbnail position-relative col-md-6">
+          <div class="col-lg-3 thumbnail position-relative col-sm-6">
             <a href="../WatchPage/watch.html"
               ><img
                 src="images/img2.png"
@@ -447,7 +506,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 thumbnail position-relative col-md-6">
+          <div class="col-lg-3 thumbnail position-relative col-sm-6">
             <a href="../WatchPage/watch.html"
               ><img
                 src="images/img3.png"
@@ -472,7 +531,7 @@
           </div>
         </div>
         <div class="row gx-3 my-3">
-          <div class="col-lg-3 thumbnail position-relative col-md-6">
+          <div class="col-lg-3 thumbnail position-relative col-sm-6">
             <a href="../WatchPage/watch.html"
               ><img
                 src="images/ad.png"
@@ -497,7 +556,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 thumbnail position-relative col-md-6">
+          <div class="col-lg-3 thumbnail position-relative col-sm-6">
             <a href="../WatchPage/watch.html"
               ><img
                 src="images/img1.png"
@@ -524,7 +583,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 thumbnail position-relative col-md-6">
+          <div class="col-lg-3 thumbnail position-relative col-sm-6">
             <a href="../WatchPage/watch.html"
               ><img
                 src="images/img2.png"
@@ -549,7 +608,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 thumbnail position-relative col-md-6">
+          <div class="col-lg-3 thumbnail position-relative col-sm-6">
             <a href="../WatchPage/watch.html"
               ><img
                 src="images/img3.png"
@@ -576,7 +635,7 @@
 
         <!-- reels -->
         <div class="row gx-3 my-3">
-          <div class="col-lg-2 col-md-4">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6">
             <img
               src="images/r1.png"
               alt="image"
@@ -590,7 +649,7 @@
               <p class="view-count fs-6 text-secondary mb-0">17K views</p>
             </div>
           </div>
-          <div class="col-lg-2 col-md-4">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6">
             <img
               src="images/r2.png"
               alt="image"
@@ -604,7 +663,7 @@
               <p class="view-count fs-6 text-secondary mb-0">5M views</p>
             </div>
           </div>
-          <div class="col-lg-2 col-md-4">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6">
             <img
               src="images/r3.png"
               alt="image"
@@ -618,7 +677,7 @@
               <p class="view-count fs-6 text-secondary mb-0">1.7M views</p>
             </div>
           </div>
-          <div class="col-lg-2 col-md-4">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6">
             <img
               src="images/r4.png"
               alt="image"
@@ -630,7 +689,7 @@
               <p class="view-count fs-6 text-secondary mb-0">208K views</p>
             </div>
           </div>
-          <div class="col-lg-2 col-md-4">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6">
             <img
               src="images/r5.png"
               alt="image"
@@ -642,7 +701,7 @@
               <p class="view-count fs-6 text-secondary mb-0">2M views</p>
             </div>
           </div>
-          <div class="col-lg-2 col-md-4">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6">
             <img
               src="images/r6.png"
               alt="image"
@@ -659,7 +718,7 @@
         </div>
 
         <div class="row gx-3 my-3">
-          <div class="col-lg-3 thumbnail position-relative col-md-6">
+          <div class="col-lg-3 thumbnail position-relative col-sm-6">
             <a href="../WatchPage/watch.html"
               ><img
                 src="images/ad.png"
@@ -684,7 +743,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 thumbnail position-relative col-md-6">
+          <div class="col-lg-3 thumbnail position-relative col-sm-6">
             <a href="../WatchPage/watch.html"
               ><img
                 src="images/img1.png"
@@ -711,7 +770,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 thumbnail position-relative col-md-6">
+          <div class="col-lg-3 thumbnail position-relative col-sm-6">
             <a href="../WatchPage/watch.html"
               ><img
                 src="images/img2.png"
@@ -736,7 +795,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 thumbnail position-relative col-md-6">
+          <div class="col-lg-3 thumbnail position-relative col-sm-6">
             <a href="../WatchPage/watch.html"
               ><img
                 src="images/img3.png"
@@ -761,7 +820,7 @@
           </div>
         </div>
         <div class="row gx-3 my-3">
-          <div class="col-lg-3 thumbnail position-relative col-md-6">
+          <div class="col-lg-3 thumbnail position-relative col-sm-6">
             <a href="../WatchPage/watch.html"
               ><img
                 src="images/ad.png"
@@ -786,7 +845,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 thumbnail position-relative col-md-6">
+          <div class="col-lg-3 thumbnail position-relative col-sm-6">
             <a href="../WatchPage/watch.html"
               ><img
                 src="images/img1.png"
@@ -813,7 +872,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 thumbnail position-relative col-md-6">
+          <div class="col-lg-3 thumbnail position-relative col-sm-6">
             <a href="../WatchPage/watch.html"
               ><img
                 src="images/img2.png"
@@ -838,7 +897,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 thumbnail position-relative col-md-6">
+          <div class="col-lg-3 thumbnail position-relative col-sm-6">
             <a href="../WatchPage/watch.html"
               ><img
                 src="images/img3.png"
@@ -861,6 +920,62 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div
+        class="horizontal-nav-sm fixed-bottom justify-content-evenly align-items-center d-flex"
+      >
+        <div class="vnav-text m-2">
+          <a
+            href="../homepage/home.html"
+            class="text-decoration-none text-ligh vnav-button rounded py-2 fw-medium bg-transparent"
+            ><i
+              class="fa-solid fa-house fa-lg px-3 bg-transparent"
+              style="color: #ffffff"
+            ></i>
+            <p class="text-light px-2 fw-semibold rounded bg-transparent">
+              Home
+            </p></a
+          >
+        </div>
+        <div class="vnav-text m-2">
+          <a
+            href="#"
+            class="text-decoration-none text-light py-2 fw-medium vnav-text bg-transparent"
+            ><i
+              class="fa-solid fa-video fa-lg px-3 bg-transparent"
+              style="color: #ffffff"
+            ></i>
+            <p class="text-light px-2 fw-semibold rounded bg-transparent">
+              Shorts
+            </p></a
+          >
+        </div>
+        <div class="vnav-text m-2">
+          <a
+            href="#"
+            class="text-decoration-none text-light py-2 fw-medium vnav-text bg-transparent"
+            ><i
+              class="fa-solid fa-film fa-lg px-3 bg-transparent"
+              style="color: #ffffff"
+            ></i>
+            <p class="text-light fw-semibold rounded bg-transparent">
+              Subscriptions
+            </p></a
+          >
+        </div>
+        <div class="vnav-text m-2">
+          <a
+            href="#"
+            class="text-decoration-none text-light py-2 fw-medium vnav-text bg-transparent"
+            ><i
+              class="fa-solid fa-user fa-lg px-3 bg-transparent"
+              style="color: #ffffff"
+            ></i>
+            <p class="text-light px-2 fw-semibold rounded bg-transparent">
+              You
+            </p></a
+          >
         </div>
       </div>
     </main>

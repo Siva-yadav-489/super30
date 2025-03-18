@@ -3,8 +3,13 @@
   padding: 0;
   background-color: #0f0f0f;
 }
+.center-nav {
+  width: 32rem;
+}
+
 .input-group {
-  width: 35rem;
+  width: 100%;
+  max-width: 35rem;
 }
 .form-control,
 .input-group-text {
@@ -13,6 +18,12 @@
   box-shadow: none;
   color: #fff;
   border-radius: 30px;
+}
+.search-bar::placeholder {
+  color: rgba(255, 255, 255, 0.489);
+}
+.search-bar:focus {
+  background-color: hsl(0, 0%, 18.82%);
 }
 .input-group-text {
   border: 1px solid hsl(0, 0%, 18.82%);
@@ -25,15 +36,25 @@
   width: 42px;
   line-height: 1.6rem;
 }
-.create-button {
+.create-button,
+.vnav-button {
   border: none;
   background-color: hsla(0, 0%, 100%, 0.08);
   border-radius: 30px;
   color: #fff;
 }
 .vertical-nav {
-  width: 14rem;
-  margin-top: 55px;
+  max-width: 15rem;
+  margin-top: 60px;
+  max-height: 100vh;
+}
+.vertical-nav-md {
+  max-width: 6rem;
+  margin-top: 60px;
+  max-height: 100vh;
+}
+.vertical-nav-md p {
+  font-size: 0.6rem;
 }
 .vnav-text {
   font-size: 0.92rem;
@@ -46,16 +67,12 @@
   max-width: 1450px;
 }
 .main-content {
-  margin-left: 240px !important;
+  margin-left: 15.5rem !important;
+  margin-top: 5rem;
 }
-@media (max-width: 500px) {
-  .vertical-nav,
-  .fa-bars,
-  .center-nav,
-  .create-button,
-  .fa-bell {
-    display: none !important;
-  }
+.scroll-bar::-webkit-scrollbar {
+  /* width: 2px !important; */
+  display: none;
 }
 .music-logo {
   min-width: 1px;
@@ -81,4 +98,63 @@
 }
 .pl-image {
   max-width: 250px;
+}
+
+@media (min-width: 787px) {
+  .vertical-nav-md {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .center-nav {
+    max-width: 50%;
+  }
+  .create-button,
+  .fa-bell {
+    display: none;
+  }
+  .vertical-nav {
+    max-width: 12rem;
+  }
+  .main-content {
+    margin-left: 13rem !important;
+  }
+  .main-video {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 786px) {
+  .vertical-nav {
+    display: none;
+  }
+  .main-content {
+    margin-left: 6rem !important;
+  }
+  .main-video {
+    margin-top: 1rem;
+  }
+  .music-header {
+    margin-left: 0.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .vertical-nav,
+  .vertical-nav-md,
+  .fa-bars,
+  .center-nav,
+  .create-button,
+  .fa-bell,
+  .head-section {
+    display: none !important;
+  }
+  .main-content {
+    margin-left: 0rem !important;
+  }
+}
+@media (min-width: 577px) {
+  .horizontal-nav-sm {
+    display: none !important;
+  }
 }

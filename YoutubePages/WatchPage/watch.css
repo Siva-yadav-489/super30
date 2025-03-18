@@ -3,8 +3,13 @@
   padding: 0;
   background-color: #0f0f0f;
 }
+.center-nav {
+  width: 32rem;
+}
+
 .input-group {
-  width: 35rem;
+  width: 100%;
+  max-width: 35rem;
 }
 .form-control,
 .input-group-text {
@@ -13,6 +18,12 @@
   box-shadow: none;
   color: #fff;
   border-radius: 30px;
+}
+.search-bar::placeholder {
+  color: rgba(255, 255, 255, 0.489);
+}
+.search-bar:focus {
+  background-color: hsl(0, 0%, 18.82%);
 }
 .input-group-text {
   border: 1px solid hsl(0, 0%, 18.82%);
@@ -30,7 +41,7 @@
   background-color: hsla(0, 0%, 100%, 0.08);
   border-radius: 30px;
   color: #fff;
-  font-size: 0.95rem;
+  /* font-size: 0.95rem; */
 }
 .menu {
   border-radius: 10px;
@@ -40,10 +51,20 @@
 .menu:hover {
   background-color: #ffffff38;
 }
+.player {
+  max-width: 75rem;
+}
+.main-video {
+  max-width: 75rem;
+  width: 100%;
+}
+.related-vid {
+  max-width: 30rem;
+}
 .left-c-info img {
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  max-width: 50px;
+  max-height: 50px;
 }
 main {
   padding: 0 3rem 0 3rem;
@@ -53,7 +74,7 @@ main {
   font-size: 0.5rem;
 }
 .channel-name p {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
 }
 .subscribe {
   border: none;
@@ -72,4 +93,46 @@ main {
 }
 .comment-box img {
   border-radius: 50%;
+}
+.scroll-bar::-webkit-scrollbar {
+  /* width: 2px !important; */
+  display: none;
+}
+@media (min-width: 993px) {
+  .related-vid {
+    max-width: 30rem;
+  }
+  .right-c-info button {
+    font-size: 0.6rem !important;
+  }
+}
+@media (max-width: 992px) {
+  .center-nav {
+    max-width: 50%;
+  }
+  .create-button,
+  .fa-bell {
+    display: none;
+  }
+  main {
+    flex-direction: column;
+  }
+  .related-vid {
+    max-width: 70rem;
+  }
+}
+
+@media (max-width: 786px) {
+  main {
+    padding: 1rem;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .fa-bars,
+  .center-nav,
+  .create-button,
+  .fa-bell {
+    display: none !important;
+  }
 }

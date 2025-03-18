@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="music.css" />
   </head>
-  <body>
+  <body class="scroll-bar">
     <nav
       class="nav d-flex align-items-center justify-content-between py-2 fixed-top"
     >
@@ -90,7 +90,7 @@
         <div class="input-group">
           <input
             type="text"
-            class="form-control lh-base"
+            class="form-control lh-base search-bar"
             placeholder="Search"
             aria-label="Search"
             aria-describedby="basic-addon1"
@@ -119,8 +119,8 @@
         ></i>
       </div>
     </nav>
-    <main class="d-flex">
-      <div class="vertical-nav fixed-top">
+    <main class="d-flex scroll-bar">
+      <div class="vertical-nav fixed-top overflow-y-scroll scroll-bar">
         <div class="row">
           <a
             href="../homepage/home.html"
@@ -325,9 +325,59 @@
           >
         </div>
       </div>
+      <div class="vertical-nav-md fixed-top">
+        <div class="row vnav-text mx-2">
+          <a
+            href="../homepage/home.html"
+            class="text-decoration-none text-ligh vnav-button rounded py-2 fw-medium bg-transparent"
+            ><i
+              class="fa-solid fa-house fa-lg px-3 bg-transparent"
+              style="color: #ffffff"
+            ></i
+          ></a>
+          <p class="text-light px-4 fw-semibold rounded bg-transparent">Home</p>
+        </div>
+        <div class="row vnav-text mx-2">
+          <a
+            href="#"
+            class="text-decoration-none text-light py-2 fw-medium vnav-text bg-transparent"
+            ><i
+              class="fa-solid fa-video fa-lg px-3 bg-transparent"
+              style="color: #ffffff"
+            ></i
+          ></a>
+          <p class="text-light px-4 fw-semibold rounded bg-transparent">
+            Shorts
+          </p>
+        </div>
+        <div class="row vnav-text mx-2">
+          <a
+            href="#"
+            class="text-decoration-none text-light py-2 fw-medium vnav-text bg-transparent"
+            ><i
+              class="fa-solid fa-film fa-lg px-3 bg-transparent"
+              style="color: #ffffff"
+            ></i
+          ></a>
+          <p class="text-light fw-semibold rounded bg-transparent">
+            Subscriptions
+          </p>
+        </div>
+        <div class="row vnav-text mx-2">
+          <a
+            href="#"
+            class="text-decoration-none text-light py-2 fw-medium vnav-text bg-transparent"
+            ><i
+              class="fa-solid fa-user fa-lg px-3 bg-transparent"
+              style="color: #ffffff"
+            ></i
+          ></a>
+          <p class="text-light px-4 fw-semibold rounded bg-transparent">You</p>
+        </div>
+      </div>
       <div class="container mx-0 main-content">
-        <div class="row bg-black pl-4">
-          <div class="col-6 text-light bg-black align-self-center">
+        <div class="row bg-black pl-4 head-section">
+          <div class="col-lg-6 col-md-12 text-light bg-black align-self-center">
             <p class="fs-6 fw-medium bg-black">
               Hanumankind • 16M views • 9 days ago
             </p>
@@ -369,7 +419,7 @@
               />
             </div>
           </div>
-          <div class="col-6 bg-black">
+          <div class="col-lg-6 col-md-12 bg-black">
             <video
               class="main-video"
               src="images/mainscreen/Hanumankind - Run It Up.mp4"
@@ -379,7 +429,7 @@
             ></video>
           </div>
         </div>
-        <div class="row px-4 pt-4 pb-2 align-items-center music-header">
+        <div class="row px-4 pt-4 pb-2 align-items-center music-header w-100">
           <img
             src="images/music-logo.jpg"
             alt="music-logo"
