@@ -136,14 +136,6 @@
   .fa-bell {
     display: none !important;
   }
-  .vid-slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .card-body {
-    align-self: center;
-  }
 }
 @media (max-width: 576px) {
   .vertical-nav,
@@ -157,8 +149,17 @@
   .trending-container {
     margin-left: 0rem !important;
   }
-  .vid-slide img {
+  .vid-slide img,
+  a {
     width: 100%;
+  }
+  .vid-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-body {
+    align-self: center;
   }
 }
 @media (min-width: 577px) {
