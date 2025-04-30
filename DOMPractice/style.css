@@ -1,0 +1,19 @@
+body {
+  border: 2px solid black;
+  padding: 2rem;
+}
+
+#main {
+  border: 2px solid rgb(237, 53, 53);
+  padding: 2rem;
+  margin: 1rem 0;
+}
+#inside-main {
+  border: 2px solid rgb(200, 193, 98);
+  padding: 2rem;
+}
+.same-classes {
+  border: 2px solid rgb(149, 149, 149);
+  padding: 2rem;
+  margin: 1rem 0;
+}
